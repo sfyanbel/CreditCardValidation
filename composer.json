@@ -1,0 +1,19 @@
+{
+    "name": "sfyanbel/credit-card-validation",
+    "description": "Validation Credit Card to identify the Brand",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sfyan belhaj",
+            "email": "sfyanbelhag7@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "sfyanbel\\CreditCardValidation\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
