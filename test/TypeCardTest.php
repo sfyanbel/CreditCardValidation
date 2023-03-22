@@ -1,6 +1,7 @@
 <?php
 namespace sfyanbel\CreditCardValidation\test;
 
+use sfyanbel\CreditCardValidation\CreditCard;
 
 class TypeCardTest {
     
@@ -14,7 +15,7 @@ class TypeCardTest {
 
 function test(){
    
-    $testCreditCard = "4394341809867844";
+    $testCreditCard = "34418098f678409";
 
     $ob = new CreditCard();
     return $ob->getTypeCreditCard($testCreditCard);
