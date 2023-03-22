@@ -4,14 +4,22 @@ namespace sfyanbel\CreditCardValidation\test;
 
 class TypeCardTest {
     
-    function test(){
-        // Test Credit Card
-        $testCreditCard = "4394341809867844";
 
-        $ob = new CreditCard();
-        $object= $ob->getTypeCreditCard($testCreditCard);
-        return $object;
-    }
+/*
+|--------------------------------------------------------------------------
+| test Type of Credit Card by any Credit Card Number
+|--------------------------------------------------------------------------
+|
+*/
+
+function test(){
+   
+    $testCreditCard = "4394341809867844";
+
+    $ob = new CreditCard();
+    return $ob->getTypeCreditCard($testCreditCard);
+    
+}
 
 }
 

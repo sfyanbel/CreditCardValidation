@@ -7,10 +7,21 @@ use sfyanbel\CreditCardValidation\Brands\MasterCards;
 use sfyanbel\CreditCardValidation\Brands\Visa;
 use sfyanbel\CreditCardValidation\Brands\AmericanExpress;
 
+
+
 class CreditCard{
 
 
 
+    /*
+    |--------------------------------------------------------------------------
+    | validationDegitCount Function
+    |--------------------------------------------------------------------------
+    | This Function will return True || False
+    | 
+    | True if the Count of Degit correct
+    | False if tht Count of Degit incorrect
+    */
   
 
 
@@ -30,6 +41,16 @@ class CreditCard{
              return true;
           }
      }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | fetchType Function
+    |--------------------------------------------------------------------------
+    | This Function will return Array Contain Info Data for selected Card 
+    |
+    | 
+    */
 
 
      private function fetchType($firstNum){
@@ -58,6 +79,15 @@ class CreditCard{
      public function getTypeCreditCard($CreditCard){
 
 
+        /*
+        |--------------------------------------------------------------------------
+        | getTypeCreditCard Function
+        |--------------------------------------------------------------------------
+        | This Function which Developer will called
+        | just input Credit Card as Parameter and watch the Result
+        |
+        | 
+        */
 
         //first number of Credit Card
         $firstNumber = substr($CreditCard, 0, 1);
@@ -81,14 +111,7 @@ class CreditCard{
         
         }
 
-        function test(){
-            // Test Credit Card
-            $testCreditCard = "4394341809867844";
 
-            $ob = new CreditCard();
-            $object= $ob->getTypeCreditCard($testCreditCard);
-            return $object;
-        }
 
 }
 
