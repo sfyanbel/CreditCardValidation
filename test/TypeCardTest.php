@@ -15,7 +15,7 @@ class TypeCardTest {
 
 function test(){
    
-    $testCreditCard = "34418098f678409";
+    $testCreditCard = "4244180983678409";
 
     $ob = new CreditCard();
     return $ob->getTypeCreditCard($testCreditCard);

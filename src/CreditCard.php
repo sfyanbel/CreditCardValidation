@@ -51,6 +51,12 @@ class CreditCard{
 
      public function getTypeCreditCard($CreditCard){
 
+
+        if(is_numeric($CreditCard))
+        {
+
+        
+
         //first number of Credit Card
         $firstNumber = substr($CreditCard, 0, 1);
         
@@ -65,6 +71,9 @@ class CreditCard{
              return $this->fetchType($firstNumber)::$info;
         }
         
+        }
+        else {return "[The Number not Numeric]";}
+     
         
         }
 
