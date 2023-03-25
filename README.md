@@ -51,7 +51,7 @@ class TestController extends Controller
 ## How to Contributor in this package (welcome for any Contributors)
 
 1.add Class for new Card Number as you see in the Brands Folder  
-2.create the Variables and Functions like other Cards
+2.create the Variables and Functions like other Cards            
 3.commit then Pull Request to Review 
 
 
