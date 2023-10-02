@@ -44,15 +44,15 @@ class TestController extends Controller
 
 ```
 
-## result as Following  
+## result as Follows
 ```
-['AmericanExpress',1] , ['Visa',2] , ['MasterCards',3] , ['Discover',4] 
+['AmericanExpress',1], ['Visa',2], ['MasterCards',3], ['Discover',4] 
 ```
-## How to Contributor in this package (welcome for any Contributors)
+## How to Contributor to this package (welcome for any Contributors)
 
-1.add Class for new Card Number as you see in the Brands Folder  
-2.create the Variables and Functions like other Cards            
-3.commit then Pull Request to Review 
+1. add Class for new Card Number as you see in the Brands Folder  
+2. create the Variables and Functions like other Cards            
+3. commit then Pull a Request to Review 
 
 
 
