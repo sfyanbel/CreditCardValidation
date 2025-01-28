@@ -7,8 +7,6 @@ use sfyanbel\CreditCardValidation\Brands\MasterCards;
 use sfyanbel\CreditCardValidation\Brands\Visa;
 use sfyanbel\CreditCardValidation\Brands\AmericanExpress;
 
-
-
 class CreditCard{
 
     /*
@@ -17,8 +15,6 @@ class CreditCard{
     |--------------------------------------------------------------------------
     | This Function will return Object from the Cards Class 
     */
-
-
      private function fetchType($firstNum){
      
         switch ($firstNum) {
@@ -38,8 +34,7 @@ class CreditCard{
                 return ['String incorrect'];
         }
      }
-
-
+    
     /*
     |--------------------------------------------------------------------------
     | getTypeCreditCard Function
@@ -48,55 +43,26 @@ class CreditCard{
     | just input Credit Card as Parameter and watch the Result
     */
 
-
      public function getTypeCreditCard($CreditCard){
 
+        if(is_numeric($CreditCard)){
 
-        if(is_numeric($CreditCard))
-        {
-
+            $firstNumber = substr($CreditCard, 0, 1);
+            
+            $count = strlen($CreditCard);
         
-
-        //first number of Credit Card
-        $firstNumber = substr($CreditCard, 0, 1);
-        
-        //count number of Credit Card
-        $count = strlen($CreditCard);
-        
-        if(!$this->fetchType($firstNumber)::validationLenght($count)){
-           
-            return "[The count of digits is incorrect]";
+            if(!$this->fetchType($firstNumber)::validationLenght($count)){
+                return "[The count of digits is incorrect]";
+            }
+            else{
+                 return $this->fetchType($firstNumber)::$info;
+            }
+            
         }
         else{
-             return $this->fetchType($firstNumber)::$info;
+            return "[The Number not Numeric]";
         }
-        
-        }
-        else {return "[The Number not Numeric]";}
-     
-        
-        }
-
-
-
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
 ?>
-
